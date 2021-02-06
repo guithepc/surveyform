@@ -31,6 +31,21 @@
 
             </div>
 
+            <div>
+                <label id="email-label" for="email">
+                    Email
+                </label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your best email" required>
+
+
+            </div>
+
+
+
+            <div>
+
+            </div>
+
             <div class="form-group">
                 <label id="number" for="number">Age 
                     <span class="clue">(optional)</span>
@@ -41,10 +56,126 @@
 
             </div>
 
-            <div>
+            <div class="form-group">
+                <p>Wich option best describes your current role?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled select value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Job</option>
+                    <option value="learnder">Full Time Leaner</option>
+                    <option value="peferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
 
             </div>
 
+            <div class="form-group">
+                <p>Would you recommend Growlaroid to a friend?</p>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="user-recommend"
+                        value="definetely"
+                        class="input-radio"
+                        checked>
+                        Definetely
+        
+                </label>
+
+                <label>
+                    <input
+                        
+                        name="user-recommend"
+                        type="radio"
+                        value="maybe"
+                        class="input-radio"
+                        checked>
+                        Maybe
+        
+                </label>
+
+                <label>
+                    <input
+                        
+                        name="user-recommend"
+                        type="radio"
+                        value="not-sure"
+                        class="input-radio"
+                        checked>
+                        Not sure
+        
+                </label>
+
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What is your favorite feature of Growlaroid?
+                </p>
+
+                <select name="mostLike" id="most-like" class="form-control" required>
+
+                    <option disabled selected value>
+                        Select an option
+                    </option>
+
+                    <option value="empathy">Empathy</option>
+                    <option value="proffissionalism">Proffisionalism</option>
+                    <option value="good talk">Good talks</option>
+                    <option value="education">Educação</option>
+                    <option value="our-comunity">Our comunity</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What would you like to see improved?
+
+
+                    <span class="clue">
+                        (Check all that apply)
+                    </span>
+                </p>
+
+                <label>
+                    <input type="checkbox" name="prefer" value="fe-projects" class="input-checkbox">
+                    Front-end Projects
+                </label>
+
+                <label>
+                    <input type="checkbox" name="prefer" value="digital-midia" class="input-checkbox">
+                    Digital Media
+                </label>
+
+                <label>
+                    <input type="checkbox" name="prefer" value="usuability" class="input-checkbox">
+                    Usuability
+                </label>
+
+                <label>
+                    <input type="checkbox" name="prefer" value="Digital Sources" class="input-checkbox">
+                    Digital Sources
+                </label>
+
+                <div class="form-group">
+                    <p>
+                        Any comments or suggestions?
+                    </p>
+
+                    <textarea cols="50" class="input-textarea" name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
+
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+
+                </div>
+
+
+            </div>
 
         </form>
 
